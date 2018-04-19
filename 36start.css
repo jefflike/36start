@@ -2,13 +2,29 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: #9A9DA2 url("bg_img.jpg") no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+}
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 kbd{
-    width: 40px;
+    width: 50px;
     height: 40px;
     display: inline-block;
-    border: #CF5D5F 1px solid;
+    border: #373737 1px solid;
     text-transform: capitalize;
     position: relative;
+    box-shadow: 0 0  0 1px #1A1B1C, 0 0 0 2px #1F2020;
+    margin: 16px 20px;
+    border-radius: 6px;
+    color: #C5C5C5;
+    background: linear-gradient(to right, #1A1B1C 0%, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 39%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 76%, rgba(17,17,17,1) 91%, rgba(17,17,17,1) 100%);
 }
 div:nth-child(2){
     margin-left: 20px;
@@ -21,12 +37,31 @@ kbd>button{
     position: absolute;
     right: 0;
     bottom: 0;
+    background-color: #C5C5C5;
     display: none;
+    border-radius: 2px;
 }
 kbd:hover button{
     display: block;
 }
 #myButton{
-    text-align: center;
-    border: #CF5D5F 1px solid;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+kbd .word{
+    font-size: 16px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-family: Helvetica;
+}
+kbd .icon{
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
 }
